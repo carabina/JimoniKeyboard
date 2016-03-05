@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84AADE901C86123500028505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AADE8F1C86123500028505 /* AppDelegate.swift */; };
+		84AADE921C86123500028505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AADE911C86123500028505 /* ViewController.swift */; };
+		84AADE951C86123500028505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AADE931C86123500028505 /* Main.storyboard */; };
+		84AADE971C86123500028505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AADE961C86123500028505 /* Images.xcassets */; };
+		84AADE9A1C86123500028505 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AADE981C86123500028505 /* LaunchScreen.xib */; };
+		84AADEA61C86123500028505 /* JimoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AADEA51C86123500028505 /* JimoniTests.swift */; };
+		84AADEB81C86126900028505 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AADEB71C86126900028505 /* KeyboardViewController.swift */; };
+		84AADEBB1C86126900028505 /* JimoniKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84AADEB31C86126900028505 /* JimoniKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84AADEC31C86179100028505 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AADEC21C86179100028505 /* ImageCollectionViewCell.xib */; };
+		84AADEC51C86248F00028505 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AADEC41C86248E00028505 /* KeyboardView.xib */; };
+		84D0FA681C8B5EA4003F6A2A /* a1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA4A1C8B5EA4003F6A2A /* a1.png */; };
+		84D0FA691C8B5EA4003F6A2A /* a2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA4B1C8B5EA4003F6A2A /* a2.png */; };
+		84D0FA6A1C8B5EA4003F6A2A /* a3.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA4C1C8B5EA4003F6A2A /* a3.png */; };
+		84D0FA6B1C8B5EA4003F6A2A /* a4.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA4D1C8B5EA4003F6A2A /* a4.png */; };
+		84D0FA6C1C8B5EA4003F6A2A /* a5.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA4E1C8B5EA4003F6A2A /* a5.png */; };
+		84D0FA6D1C8B5EA4003F6A2A /* a6.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA4F1C8B5EA4003F6A2A /* a6.png */; };
+		84D0FA6E1C8B5EA4003F6A2A /* a7.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA501C8B5EA4003F6A2A /* a7.png */; };
+		84D0FA6F1C8B5EA4003F6A2A /* a8.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA511C8B5EA4003F6A2A /* a8.png */; };
+		84D0FA701C8B5EA4003F6A2A /* a9.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA521C8B5EA4003F6A2A /* a9.png */; };
+		84D0FA711C8B5EA4003F6A2A /* a10.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA531C8B5EA4003F6A2A /* a10.png */; };
+		84D0FA721C8B5EA4003F6A2A /* a11.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA541C8B5EA4003F6A2A /* a11.png */; };
+		84D0FA731C8B5EA4003F6A2A /* a12.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA551C8B5EA4003F6A2A /* a12.png */; };
+		84D0FA741C8B5EA4003F6A2A /* a13.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA561C8B5EA4003F6A2A /* a13.png */; };
+		84D0FA751C8B5EA4003F6A2A /* a14.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA571C8B5EA4003F6A2A /* a14.png */; };
+		84D0FA761C8B5EA4003F6A2A /* a15.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA581C8B5EA4003F6A2A /* a15.png */; };
+		84D0FA771C8B5EA4003F6A2A /* a16.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA591C8B5EA4003F6A2A /* a16.png */; };
+		84D0FA781C8B5EA4003F6A2A /* a17.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA5A1C8B5EA4003F6A2A /* a17.png */; };
+		84D0FA791C8B5EA4003F6A2A /* a18.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA5B1C8B5EA4003F6A2A /* a18.png */; };
+		84D0FA7A1C8B5EA4003F6A2A /* a19.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA5C1C8B5EA4003F6A2A /* a19.png */; };
+		84D0FA7B1C8B5EA4003F6A2A /* a20.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA5D1C8B5EA4003F6A2A /* a20.png */; };
+		84D0FA7C1C8B5EA4003F6A2A /* a21.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA5E1C8B5EA4003F6A2A /* a21.png */; };
+		84D0FA7D1C8B5EA4003F6A2A /* a22.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA5F1C8B5EA4003F6A2A /* a22.png */; };
+		84D0FA7E1C8B5EA4003F6A2A /* a23.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA601C8B5EA4003F6A2A /* a23.png */; };
+		84D0FA7F1C8B5EA4003F6A2A /* a24.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA611C8B5EA4003F6A2A /* a24.png */; };
+		84D0FA801C8B5EA4003F6A2A /* a25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA621C8B5EA4003F6A2A /* a25.png */; };
+		84D0FA811C8B5EA4003F6A2A /* a26.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA631C8B5EA4003F6A2A /* a26.png */; };
+		84D0FA821C8B5EA4003F6A2A /* a27.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA641C8B5EA4003F6A2A /* a27.png */; };
+		84D0FA831C8B5EA4003F6A2A /* a28.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA651C8B5EA4003F6A2A /* a28.png */; };
+		84D0FA841C8B5EA4003F6A2A /* a29.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA661C8B5EA4003F6A2A /* a29.png */; };
+		84D0FA851C8B5EA4003F6A2A /* a30.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA671C8B5EA4003F6A2A /* a30.png */; };
+		84D0FA871C8B5EBD003F6A2A /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D0FA861C8B5EBD003F6A2A /* earth.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84AADEA01C86123500028505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AADE821C86123500028505 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84AADE891C86123500028505;
+			remoteInfo = Jimoni;
+		};
+		84AADEB91C86126900028505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AADE821C86123500028505 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84AADEB21C86126900028505;
+			remoteInfo = JimoniKeyboard;
+		};
+		84AADEBC1C86126900028505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AADE821C86123500028505 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84AADEB21C86126900028505;
+			remoteInfo = JimoniKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84AADEC11C86126900028505 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84AADEBB1C86126900028505 /* JimoniKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84AADE8A1C86123500028505 /* Jimoni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jimoni.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AADE8E1C86123500028505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AADE8F1C86123500028505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84AADE911C86123500028505 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84AADE941C86123500028505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84AADE961C86123500028505 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84AADE991C86123500028505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84AADE9F1C86123500028505 /* JimoniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JimoniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AADEA41C86123500028505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AADEA51C86123500028505 /* JimoniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JimoniTests.swift; sourceTree = "<group>"; };
+		84AADEB31C86126900028505 /* JimoniKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JimoniKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AADEB61C86126900028505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AADEB71C86126900028505 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		84AADEC21C86179100028505 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		84AADEC41C86248E00028505 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		84D0FA4A1C8B5EA4003F6A2A /* a1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a1.png; sourceTree = "<group>"; };
+		84D0FA4B1C8B5EA4003F6A2A /* a2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a2.png; sourceTree = "<group>"; };
+		84D0FA4C1C8B5EA4003F6A2A /* a3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a3.png; sourceTree = "<group>"; };
+		84D0FA4D1C8B5EA4003F6A2A /* a4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a4.png; sourceTree = "<group>"; };
+		84D0FA4E1C8B5EA4003F6A2A /* a5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a5.png; sourceTree = "<group>"; };
+		84D0FA4F1C8B5EA4003F6A2A /* a6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a6.png; sourceTree = "<group>"; };
+		84D0FA501C8B5EA4003F6A2A /* a7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a7.png; sourceTree = "<group>"; };
+		84D0FA511C8B5EA4003F6A2A /* a8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a8.png; sourceTree = "<group>"; };
+		84D0FA521C8B5EA4003F6A2A /* a9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a9.png; sourceTree = "<group>"; };
+		84D0FA531C8B5EA4003F6A2A /* a10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a10.png; sourceTree = "<group>"; };
+		84D0FA541C8B5EA4003F6A2A /* a11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a11.png; sourceTree = "<group>"; };
+		84D0FA551C8B5EA4003F6A2A /* a12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a12.png; sourceTree = "<group>"; };
+		84D0FA561C8B5EA4003F6A2A /* a13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a13.png; sourceTree = "<group>"; };
+		84D0FA571C8B5EA4003F6A2A /* a14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a14.png; sourceTree = "<group>"; };
+		84D0FA581C8B5EA4003F6A2A /* a15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a15.png; sourceTree = "<group>"; };
+		84D0FA591C8B5EA4003F6A2A /* a16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a16.png; sourceTree = "<group>"; };
+		84D0FA5A1C8B5EA4003F6A2A /* a17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a17.png; sourceTree = "<group>"; };
+		84D0FA5B1C8B5EA4003F6A2A /* a18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a18.png; sourceTree = "<group>"; };
+		84D0FA5C1C8B5EA4003F6A2A /* a19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a19.png; sourceTree = "<group>"; };
+		84D0FA5D1C8B5EA4003F6A2A /* a20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a20.png; sourceTree = "<group>"; };
+		84D0FA5E1C8B5EA4003F6A2A /* a21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a21.png; sourceTree = "<group>"; };
+		84D0FA5F1C8B5EA4003F6A2A /* a22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a22.png; sourceTree = "<group>"; };
+		84D0FA601C8B5EA4003F6A2A /* a23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a23.png; sourceTree = "<group>"; };
+		84D0FA611C8B5EA4003F6A2A /* a24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a24.png; sourceTree = "<group>"; };
+		84D0FA621C8B5EA4003F6A2A /* a25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a25.png; sourceTree = "<group>"; };
+		84D0FA631C8B5EA4003F6A2A /* a26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a26.png; sourceTree = "<group>"; };
+		84D0FA641C8B5EA4003F6A2A /* a27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a27.png; sourceTree = "<group>"; };
+		84D0FA651C8B5EA4003F6A2A /* a28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a28.png; sourceTree = "<group>"; };
+		84D0FA661C8B5EA4003F6A2A /* a29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a29.png; sourceTree = "<group>"; };
+		84D0FA671C8B5EA4003F6A2A /* a30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a30.png; sourceTree = "<group>"; };
+		84D0FA861C8B5EBD003F6A2A /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84AADE871C86123500028505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AADE9C1C86123500028505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AADEB01C86126900028505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84AADE811C86123500028505 = {
+			isa = PBXGroup;
+			children = (
+				84AADE8C1C86123500028505 /* Jimoni */,
+				84AADEA21C86123500028505 /* JimoniTests */,
+				84AADEB41C86126900028505 /* JimoniKeyboard */,
+				84AADE8B1C86123500028505 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84AADE8B1C86123500028505 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84AADE8A1C86123500028505 /* Jimoni.app */,
+				84AADE9F1C86123500028505 /* JimoniTests.xctest */,
+				84AADEB31C86126900028505 /* JimoniKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84AADE8C1C86123500028505 /* Jimoni */ = {
+			isa = PBXGroup;
+			children = (
+				84AADE8F1C86123500028505 /* AppDelegate.swift */,
+				84AADE911C86123500028505 /* ViewController.swift */,
+				84AADE931C86123500028505 /* Main.storyboard */,
+				84AADE961C86123500028505 /* Images.xcassets */,
+				84AADE981C86123500028505 /* LaunchScreen.xib */,
+				84AADE8D1C86123500028505 /* Supporting Files */,
+			);
+			path = Jimoni;
+			sourceTree = "<group>";
+		};
+		84AADE8D1C86123500028505 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84AADE8E1C86123500028505 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AADEA21C86123500028505 /* JimoniTests */ = {
+			isa = PBXGroup;
+			children = (
+				84AADEA51C86123500028505 /* JimoniTests.swift */,
+				84AADEA31C86123500028505 /* Supporting Files */,
+			);
+			path = JimoniTests;
+			sourceTree = "<group>";
+		};
+		84AADEA31C86123500028505 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84AADEA41C86123500028505 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AADEB41C86126900028505 /* JimoniKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AADEC61C8625C100028505 /* pngs */,
+				84AADEB71C86126900028505 /* KeyboardViewController.swift */,
+				84AADEC41C86248E00028505 /* KeyboardView.xib */,
+				84AADEC21C86179100028505 /* ImageCollectionViewCell.xib */,
+				84AADEB51C86126900028505 /* Supporting Files */,
+			);
+			path = JimoniKeyboard;
+			sourceTree = "<group>";
+		};
+		84AADEB51C86126900028505 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84AADEB61C86126900028505 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AADEC61C8625C100028505 /* pngs */ = {
+			isa = PBXGroup;
+			children = (
+				84D0FA4A1C8B5EA4003F6A2A /* a1.png */,
+				84D0FA4B1C8B5EA4003F6A2A /* a2.png */,
+				84D0FA4C1C8B5EA4003F6A2A /* a3.png */,
+				84D0FA4D1C8B5EA4003F6A2A /* a4.png */,
+				84D0FA4E1C8B5EA4003F6A2A /* a5.png */,
+				84D0FA4F1C8B5EA4003F6A2A /* a6.png */,
+				84D0FA501C8B5EA4003F6A2A /* a7.png */,
+				84D0FA511C8B5EA4003F6A2A /* a8.png */,
+				84D0FA521C8B5EA4003F6A2A /* a9.png */,
+				84D0FA531C8B5EA4003F6A2A /* a10.png */,
+				84D0FA541C8B5EA4003F6A2A /* a11.png */,
+				84D0FA551C8B5EA4003F6A2A /* a12.png */,
+				84D0FA561C8B5EA4003F6A2A /* a13.png */,
+				84D0FA571C8B5EA4003F6A2A /* a14.png */,
+				84D0FA581C8B5EA4003F6A2A /* a15.png */,
+				84D0FA591C8B5EA4003F6A2A /* a16.png */,
+				84D0FA5A1C8B5EA4003F6A2A /* a17.png */,
+				84D0FA5B1C8B5EA4003F6A2A /* a18.png */,
+				84D0FA5C1C8B5EA4003F6A2A /* a19.png */,
+				84D0FA5D1C8B5EA4003F6A2A /* a20.png */,
+				84D0FA5E1C8B5EA4003F6A2A /* a21.png */,
+				84D0FA5F1C8B5EA4003F6A2A /* a22.png */,
+				84D0FA601C8B5EA4003F6A2A /* a23.png */,
+				84D0FA611C8B5EA4003F6A2A /* a24.png */,
+				84D0FA621C8B5EA4003F6A2A /* a25.png */,
+				84D0FA631C8B5EA4003F6A2A /* a26.png */,
+				84D0FA641C8B5EA4003F6A2A /* a27.png */,
+				84D0FA651C8B5EA4003F6A2A /* a28.png */,
+				84D0FA661C8B5EA4003F6A2A /* a29.png */,
+				84D0FA671C8B5EA4003F6A2A /* a30.png */,
+				84D0FA861C8B5EBD003F6A2A /* earth.png */,
+			);
+			path = pngs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84AADE891C86123500028505 /* Jimoni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AADEA91C86123600028505 /* Build configuration list for PBXNativeTarget "Jimoni" */;
+			buildPhases = (
+				84AADE861C86123500028505 /* Sources */,
+				84AADE871C86123500028505 /* Frameworks */,
+				84AADE881C86123500028505 /* Resources */,
+				84AADEC11C86126900028505 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AADEBA1C86126900028505 /* PBXTargetDependency */,
+				84AADEBD1C86126900028505 /* PBXTargetDependency */,
+			);
+			name = Jimoni;
+			productName = Jimoni;
+			productReference = 84AADE8A1C86123500028505 /* Jimoni.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84AADE9E1C86123500028505 /* JimoniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AADEAC1C86123600028505 /* Build configuration list for PBXNativeTarget "JimoniTests" */;
+			buildPhases = (
+				84AADE9B1C86123500028505 /* Sources */,
+				84AADE9C1C86123500028505 /* Frameworks */,
+				84AADE9D1C86123500028505 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AADEA11C86123500028505 /* PBXTargetDependency */,
+			);
+			name = JimoniTests;
+			productName = JimoniTests;
+			productReference = 84AADE9F1C86123500028505 /* JimoniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84AADEB21C86126900028505 /* JimoniKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AADEBE1C86126900028505 /* Build configuration list for PBXNativeTarget "JimoniKeyboard" */;
+			buildPhases = (
+				84AADEAF1C86126900028505 /* Sources */,
+				84AADEB01C86126900028505 /* Frameworks */,
+				84AADEB11C86126900028505 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JimoniKeyboard;
+			productName = JimoniKeyboard;
+			productReference = 84AADEB31C86126900028505 /* JimoniKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84AADE821C86123500028505 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = withalsolution;
+				TargetAttributes = {
+					84AADE891C86123500028505 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					84AADE9E1C86123500028505 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 84AADE891C86123500028505;
+					};
+					84AADEB21C86126900028505 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 84AADE851C86123500028505 /* Build configuration list for PBXProject "Jimoni" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84AADE811C86123500028505;
+			productRefGroup = 84AADE8B1C86123500028505 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84AADE891C86123500028505 /* Jimoni */,
+				84AADE9E1C86123500028505 /* JimoniTests */,
+				84AADEB21C86126900028505 /* JimoniKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84AADE881C86123500028505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AADE951C86123500028505 /* Main.storyboard in Resources */,
+				84AADE9A1C86123500028505 /* LaunchScreen.xib in Resources */,
+				84AADE971C86123500028505 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AADE9D1C86123500028505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AADEB11C86126900028505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D0FA7B1C8B5EA4003F6A2A /* a20.png in Resources */,
+				84D0FA731C8B5EA4003F6A2A /* a12.png in Resources */,
+				84D0FA691C8B5EA4003F6A2A /* a2.png in Resources */,
+				84AADEC31C86179100028505 /* ImageCollectionViewCell.xib in Resources */,
+				84D0FA761C8B5EA4003F6A2A /* a15.png in Resources */,
+				84D0FA6D1C8B5EA4003F6A2A /* a6.png in Resources */,
+				84D0FA841C8B5EA4003F6A2A /* a29.png in Resources */,
+				84D0FA7C1C8B5EA4003F6A2A /* a21.png in Resources */,
+				84AADEC51C86248F00028505 /* KeyboardView.xib in Resources */,
+				84D0FA7E1C8B5EA4003F6A2A /* a23.png in Resources */,
+				84D0FA801C8B5EA4003F6A2A /* a25.png in Resources */,
+				84D0FA871C8B5EBD003F6A2A /* earth.png in Resources */,
+				84D0FA7A1C8B5EA4003F6A2A /* a19.png in Resources */,
+				84D0FA721C8B5EA4003F6A2A /* a11.png in Resources */,
+				84D0FA6E1C8B5EA4003F6A2A /* a7.png in Resources */,
+				84D0FA6B1C8B5EA4003F6A2A /* a4.png in Resources */,
+				84D0FA811C8B5EA4003F6A2A /* a26.png in Resources */,
+				84D0FA7D1C8B5EA4003F6A2A /* a22.png in Resources */,
+				84D0FA681C8B5EA4003F6A2A /* a1.png in Resources */,
+				84D0FA821C8B5EA4003F6A2A /* a27.png in Resources */,
+				84D0FA711C8B5EA4003F6A2A /* a10.png in Resources */,
+				84D0FA791C8B5EA4003F6A2A /* a18.png in Resources */,
+				84D0FA831C8B5EA4003F6A2A /* a28.png in Resources */,
+				84D0FA751C8B5EA4003F6A2A /* a14.png in Resources */,
+				84D0FA6F1C8B5EA4003F6A2A /* a8.png in Resources */,
+				84D0FA6A1C8B5EA4003F6A2A /* a3.png in Resources */,
+				84D0FA781C8B5EA4003F6A2A /* a17.png in Resources */,
+				84D0FA851C8B5EA4003F6A2A /* a30.png in Resources */,
+				84D0FA6C1C8B5EA4003F6A2A /* a5.png in Resources */,
+				84D0FA771C8B5EA4003F6A2A /* a16.png in Resources */,
+				84D0FA7F1C8B5EA4003F6A2A /* a24.png in Resources */,
+				84D0FA701C8B5EA4003F6A2A /* a9.png in Resources */,
+				84D0FA741C8B5EA4003F6A2A /* a13.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84AADE861C86123500028505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AADE921C86123500028505 /* ViewController.swift in Sources */,
+				84AADE901C86123500028505 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AADE9B1C86123500028505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AADEA61C86123500028505 /* JimoniTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AADEAF1C86126900028505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AADEB81C86126900028505 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84AADEA11C86123500028505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84AADE891C86123500028505 /* Jimoni */;
+			targetProxy = 84AADEA01C86123500028505 /* PBXContainerItemProxy */;
+		};
+		84AADEBA1C86126900028505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84AADEB21C86126900028505 /* JimoniKeyboard */;
+			targetProxy = 84AADEB91C86126900028505 /* PBXContainerItemProxy */;
+		};
+		84AADEBD1C86126900028505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84AADEB21C86126900028505 /* JimoniKeyboard */;
+			targetProxy = 84AADEBC1C86126900028505 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84AADE931C86123500028505 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AADE941C86123500028505 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84AADE981C86123500028505 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AADE991C86123500028505 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84AADEA71C86123600028505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84AADEA81C86123600028505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84AADEAA1C86123600028505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jimoni/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84AADEAB1C86123600028505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jimoni/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84AADEAD1C86123600028505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JimoniTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jimoni.app/Jimoni";
+			};
+			name = Debug;
+		};
+		84AADEAE1C86123600028505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JimoniTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jimoni.app/Jimoni";
+			};
+			name = Release;
+		};
+		84AADEBF1C86126900028505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JimoniKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84AADEC01C86126900028505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JimoniKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84AADE851C86123500028505 /* Build configuration list for PBXProject "Jimoni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AADEA71C86123600028505 /* Debug */,
+				84AADEA81C86123600028505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AADEA91C86123600028505 /* Build configuration list for PBXNativeTarget "Jimoni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AADEAA1C86123600028505 /* Debug */,
+				84AADEAB1C86123600028505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AADEAC1C86123600028505 /* Build configuration list for PBXNativeTarget "JimoniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AADEAD1C86123600028505 /* Debug */,
+				84AADEAE1C86123600028505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AADEBE1C86126900028505 /* Build configuration list for PBXNativeTarget "JimoniKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AADEBF1C86126900028505 /* Debug */,
+				84AADEC01C86126900028505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84AADE821C86123500028505 /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>213CCD9A-9F3F-4BA8-8BD2-FCF7D686DEF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jimoni</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFD0EE708583BA562FFF710BA8F541B8144D2320</key>
+		<string>https://github.com/jigneshbodarya/JimoniKeyboard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Jimoni.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFD0EE708583BA562FFF710BA8F541B8144D2320</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jigneshbodarya/JimoniKeyboard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFD0EE708583BA562FFF710BA8F541B8144D2320</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFD0EE708583BA562FFF710BA8F541B8144D2320</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JimoniKeyboard</string>
+		</dict>
+	</array>
+</dict>
+</plist>
