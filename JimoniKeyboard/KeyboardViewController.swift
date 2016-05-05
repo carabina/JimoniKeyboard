@@ -21,12 +21,6 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         super.updateViewConstraints()
     
        // Add custom view sizing constraints here
-        self.collectionView.registerNib(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
-        for(var i=1; i <= 30; i++)
-        {
-            self.imgArray.addObject("a\(i).png")
-        }
-        self.collectionView.reloadData()
         
     }
 
@@ -35,7 +29,14 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
         //Loading Xib
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiateWithOwner(self, options: nil)
-        view = objects[0] as UIView;
+        view = objects[0] as! UIView;
+        self.collectionView.registerNib(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
+        for(var i=1; i <= 30; i++)
+        {
+            self.imgArray.addObject("a\(i).png")
+        }
+        self.collectionView.reloadData()
+        self.view.bringSubviewToFront(self.collectionView)
            }
 
     override func didReceiveMemoryWarning() {
@@ -67,8 +68,8 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     //Collectionview delegate methods
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let iCell = collectionView.dequeueReusableCellWithReuseIdentifier("ImageCollectionViewCell", forIndexPath: indexPath) as ImageCollectionViewCell
-        iCell.imgView.image = UIImage(named: self.imgArray.objectAtIndex(indexPath.row) as String)
+        let iCell = collectionView.dequeueReusableCellWithReuseIdentifier("ImageCollectionViewCell", forIndexPath: indexPath) as! ImageCollectionViewCell
+        iCell.imgView.image = UIImage(named: self.imgArray.objectAtIndex(indexPath.row) as! String)
         return iCell
     }
     
@@ -79,10 +80,10 @@ class KeyboardViewController: UIInputViewController, UICollectionViewDataSource,
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         let pb = UIPasteboard.generalPasteboard()
-        let data = UIImagePNGRepresentation( UIImage(named: self.imgArray.objectAtIndex(indexPath.row) as String))
-        pb.setData(data, forPasteboardType: kUTTypePNG as NSString)
+        let data = UIImagePNGRepresentation( UIImage(named: self.imgArray.objectAtIndex(indexPath.row) as! String)!)
+        pb.setData(data!, forPasteboardType: kUTTypePNG as String)
         
-        let iCell = self.collectionView.cellForItemAtIndexPath(indexPath) as ImageCollectionViewCell
+        let iCell = self.collectionView.cellForItemAtIndexPath(indexPath) as! ImageCollectionViewCell
         UIView.animateWithDuration(0.2, animations: {
             iCell.transform = CGAffineTransformScale(CGAffineTransformIdentity, 2.0, 2.0)
             }, completion: {(_) -> Void in
